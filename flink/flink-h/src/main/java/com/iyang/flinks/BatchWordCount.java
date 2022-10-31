@@ -19,6 +19,7 @@ public class BatchWordCount {
         // 环境创建
         ExecutionEnvironment executionEnvironment = ExecutionEnvironment.getExecutionEnvironment();
 
+        // 批的模式执行.
         // 读取文件,使用有的文件来进行模拟
         DataSource<String> dataSource = executionEnvironment.fromElements("Flink batch demo", "batch demo", "demo");
 
