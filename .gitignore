@@ -6,6 +6,12 @@
 # Log file
 *.log
 
+# target ignore
+target/
+# .idea folder
+.idea/
+
+
 # BlueJ files
 *.ctxt
 
