@@ -18,7 +18,7 @@ import java.time.Duration;
 /***
  * @author: baoyang
  * @data: 2022/11/1
- * @desc:
+ * @desc: 窗口的触发计算(Fire) 和 清除(Purge)
  ***/
 public class WindowReduceByExp {
 

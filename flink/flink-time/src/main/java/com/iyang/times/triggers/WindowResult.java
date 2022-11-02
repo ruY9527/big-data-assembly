@@ -18,6 +18,7 @@ public class WindowResult extends ProcessWindowFunction<Event, UrlViewCount, Str
     public void process(String s, Context context,
                         Iterable<Event> elements, Collector<UrlViewCount> out) throws Exception {
 
+        // 对结果进行一个收集
         out.collect(new UrlViewCount(
                 s,
                 // 获取迭代器的个数
