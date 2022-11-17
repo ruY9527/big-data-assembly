@@ -18,6 +18,33 @@
 - 更新插入流中包含两种类型的消息,更新插入(upsert)消息和删除(delete)消息
 - "upsert"其实是"update"和"insert"的合成词,所以对于更新插入流来说,INSERT插入操作和UPDATE更新操作,统一被编码为upsert消息;而delete删除操作则编码为delete消息
 
+## 常规联结查询
+1. 等值内连接(INNER Equi-JOIN)
+2. 等值外连接(OUTER Equi-JOIN)
+
+## 函数
+1. 系统函数
+- 标量函数(比较函数,逻辑函数,算术函数,字符串函数,时间函数)
+- 聚合函数(count,sum,rank,row_number)
+- 自定义函数(标量函数,表函数,聚合函数,表聚合函数)
+2. 
+## 设置运行模式
+```$xslt
+设置流执行
+SET 'execution.runtime-mode' = 'streaming';
+
+# table
+SET 'sql-client.execution.result-mode' = 'table';
+```
+## CEP(Complex Event Processing)
+1. 定义一个匹配规则
+2. 将匹配规则应用到事件流上,检测满足规则的复杂事件
+3. 对检测的负责事件进行处理,得到结果进行输出
+
+### 模式
+1. 每个简单事件的特征
+2. 简单事件之间的组合关系
+
 ## 时间语义
 1. 事件事件
 2. 处理事件
