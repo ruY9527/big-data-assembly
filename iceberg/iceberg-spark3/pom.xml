@@ -11,6 +11,19 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <spark.version>3.0.0</spark.version>
+        <scala.version>2.12.10</scala.version>
+        <fastjson.version>1.2.47</fastjson.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <kafka.client.verson>2.4.1</kafka.client.verson>
+        <canal.client.verson>1.1.2</canal.client.verson>
+        <jedis.verson>3.2.0</jedis.verson>
+        <mysql.client.verson>5.1.27</mysql.client.verson>
+        <druid.verson>1.0.5</druid.verson>
+        <es.version>7.8.0</es.version>
+        <http.client>3.1</http.client>
     </properties>
 
 
@@ -92,6 +105,24 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.27</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.12</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.12</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_2.12</artifactId>
+            <version>3.0.1</version>
         </dependency>
 
     </dependencies>
